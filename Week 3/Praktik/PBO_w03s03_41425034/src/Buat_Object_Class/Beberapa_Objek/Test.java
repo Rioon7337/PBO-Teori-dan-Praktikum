@@ -13,7 +13,7 @@ public class Test {
         Animal obj = new Dog(); //Menggunakan Dog Object
         Cat obj1 = new Cat();        //Menggunakan Cat Object
         //kenapa kalau ngak pakai Animal di depan obj itu salah?
-        //tanpa tipe (Animal) compiler mengira bahwa obj1 adalah nama variabel yang bekum ada
+        //tanpa tipe (Animal) compiler mengira bahwa obj1 adalah nama variabel yang belum ada
         
         obj.suara();
         obj1.suara();

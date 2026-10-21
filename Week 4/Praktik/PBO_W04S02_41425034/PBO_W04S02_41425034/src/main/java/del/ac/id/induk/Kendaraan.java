@@ -64,4 +64,10 @@ public class Kendaraan implements IKendaraan{
     public float kalkulasiPercepatan(int jlhTorsi, float panjangGagang, float rasioGigi) {
         return jlhTorsi * panjangGagang * rasioGigi;
     }
+    
+    public static void main(String[] args) {
+        Kendaraan obj = new Kendaraan();
+        obj.setJlhRoda(4);
+        System.out.println("Jumlah roda: " + obj.jlhRoda);
+    }
 }
