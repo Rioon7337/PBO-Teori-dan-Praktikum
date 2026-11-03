@@ -24,9 +24,11 @@ public class BasicOperationString {
 
         // 4. Parsing: mengubah String berisi angka menjadi tipe primitif int
         int angka = Integer.parseInt("123");       // Hasil: 123 (int)
+        System.out.println(angka + 100);
 
         // 5. Casting/Conversion: mengubah tipe primitif menjadi String
         String teksAngka = String.valueOf(123);    // Hasil: "123" (String)
+        System.out.println(teksAngka + 100);
 
     }
 }
