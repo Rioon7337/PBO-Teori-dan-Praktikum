@@ -20,6 +20,7 @@ public class HashMapExample {
         petaAlat.put("E101", "Multimeter Sanwa CD800a");
         petaAlat.put("M202", "Obeng Set Precision");
         petaAlat.put("O303", "Mikroskop Binokuler");
+        petaAlat.put("C102", "Obeng Set Precision");
 
         // 2. Mengambil data alat secara langsung berdasarkan kodenya
         String namaAlat = petaAlat.get("M202");

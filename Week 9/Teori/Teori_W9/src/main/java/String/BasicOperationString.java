@@ -29,6 +29,11 @@ public class BasicOperationString {
         // 5. Casting/Conversion: mengubah tipe primitif menjadi String
         String teksAngka = String.valueOf(123);    // Hasil: "123" (String)
         System.out.println(teksAngka + 100);
-
+        /*
+        String[] arr =  new String[2];
+        arr[0] = "Rina";
+        arr[1] = "Budi";
+        arr[2] = "Sari";
+        */
     }
 }
