@@ -25,6 +25,7 @@ public class StringExample {
         String a = "Del";                // Disimpan di String Pool
         String b = "Del";                // Merujuk ke objek "Del" yang SAMA di String Pool
         String c = new String("Del");    // Dibuat eksplisit di memori Heap (di luar String Pool)
+        String d = "del";
 
         System.out.println(a == b);       // Output: true  (Alamat memori di String Pool SAMA)
         System.out.println(a == c);       // Output: false (Alamat memori BERBEDA: Pool vs Heap)

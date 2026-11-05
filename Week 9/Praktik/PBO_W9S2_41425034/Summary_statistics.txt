@@ -1,0 +1,10 @@
+=== SUMMARY STATISTICS REPORT (CSV) ===
+Total Mahasiswa      : 4
+
+--- Statistik Nilai PBO ---
+Rata-rata Nilai PBO  : 81,25
+Nilai PBO Tertinggi  : 91.0 (Budi)
+Nilai PBO Terendah   : 70.0 (Rina)
+
+--- Statistik Nilai Basis Data ---
+Rata-rata Nilai BD   : 77,25

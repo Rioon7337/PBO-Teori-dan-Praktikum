@@ -14,7 +14,7 @@ public class StringBuilderExample {
         System.out.println(sb);
         sb.append(" World");       // Menggabungkan teks -> "Hello World"
         System.out.println(sb);
-        sb.insert(5, ", Java");    // Menyisipkan teks pada indeks ke-5 -> "Hello, Java World"
+        sb.insert(0, ", Java");    // Menyisipkan teks pada indeks ke-5 -> "Hello, Java World"
         System.out.println(sb);    // Output: Hello, Java World
         sb.insert(12, "Contoh");
         System.out.println(sb);
