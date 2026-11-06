@@ -116,7 +116,7 @@ public class StringManipulation {
         int end = kata.length(); 
         // Posisi akhir = posisi awal + panjang kata. Jadi substring(start, start + end) mengambil tepat
         // 4 karakter mulai dari posisi awal, yaitu "Java".
-        System.out.println("Mengambil kata Java: " + text.substring(start, start + end));
+        System.out.println("\nMengambil kata Java: " + text.substring(start, start + end));
         
         //Modifikasi
         //Hanya menampilkan kata lebih dari 4

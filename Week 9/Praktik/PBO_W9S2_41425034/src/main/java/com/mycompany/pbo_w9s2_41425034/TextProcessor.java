@@ -272,11 +272,15 @@ public class TextProcessor {
             String line;
             int totalSiswa = 0;
             double totalNilaiPBO = 0;
-            double totalNilaiBD = 0;
+            double totalNilaiSBD = 0;
             double maxPBO = Double.MIN_VALUE;
             double minPBO = Double.MAX_VALUE;
+            double maxSBD = Double.MIN_VALUE;
+            double minSBD = Double.MAX_VALUE;
             String mahasiswaMaxPBO = "";
             String mahasiswaMinPBO = "";
+            String mahasiswaMaxSBD = "";
+            String mahasiswaMinSBD = "";
 
             boolean isHeader = true;
 
@@ -295,11 +299,11 @@ public class TextProcessor {
                     try {
                         // Parsing data numerik dari string CSV
                         double nilaiPBO = Double.parseDouble(parts[2].trim());
-                        double nilaiBD = Double.parseDouble(parts[3].trim());
+                        double nilaiSBD = Double.parseDouble(parts[3].trim());
 
                         totalSiswa++;
                         totalNilaiPBO += nilaiPBO;
-                        totalNilaiBD += nilaiBD;
+                        totalNilaiSBD += nilaiSBD;
 
                         // Mencari nilai tertinggi & terendah PBO beserta nama mahasiswanya
                         if (nilaiPBO > maxPBO) {
@@ -309,6 +313,16 @@ public class TextProcessor {
                         if (nilaiPBO < minPBO) {
                             minPBO = nilaiPBO;
                             mahasiswaMinPBO = nama;
+                        }
+                        
+                        // Mencari nilai tertinggi & terendah SBD beserta nama mahasiswanya
+                        if (nilaiSBD > maxSBD) {
+                            maxSBD = nilaiSBD;
+                            mahasiswaMaxSBD = nama;
+                        }
+                        if (nilaiSBD < minSBD) {
+                            minSBD = nilaiSBD;
+                            mahasiswaMinSBD = nama;
                         }
 
                     } catch (NumberFormatException e) {
@@ -320,7 +334,7 @@ public class TextProcessor {
 
             // Menghitung rata-rata kelas
             double avgPBO = (totalSiswa > 0) ? (totalNilaiPBO / totalSiswa) : 0;
-            double avgBD = (totalSiswa > 0) ? (totalNilaiBD / totalSiswa) : 0;
+            double avgBD = (totalSiswa > 0) ? (totalNilaiSBD / totalSiswa) : 0;
 
             // Menulis laporan ringkasan statistik CSV ke file teks
             writer.write("=== SUMMARY STATISTICS REPORT (CSV) ===");
@@ -339,8 +353,11 @@ public class TextProcessor {
             writer.newLine();
             writer.write("--- Statistik Nilai Basis Data ---");
             writer.newLine();
-            writer.write("Rata-rata Nilai BD   : " + String.format("%.2f", avgBD));
+            writer.write("Rata-rata Nilai SBD   : " + String.format("%.2f", avgBD));
             writer.newLine();
+            writer.write("Nilai SBD Tertinggi  : " + maxSBD + " (" + mahasiswaMaxSBD + ")");
+            writer.newLine();
+            writer.write("Nilai SBD Terendah   : " + minSBD + " (" + mahasiswaMinSBD + ")");
 
             System.out.println("CSV Statistics processing completed!");
 

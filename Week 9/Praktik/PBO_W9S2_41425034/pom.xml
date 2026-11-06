@@ -10,4 +10,5 @@
         <maven.compiler.release>23</maven.compiler.release>
         <exec.mainClass>com.mycompany.pbo_w9s2_41425034.PBO_W9S2_41425034</exec.mainClass>
     </properties>
+    <name>PBO_W9S3_41425034</name>
 </project>

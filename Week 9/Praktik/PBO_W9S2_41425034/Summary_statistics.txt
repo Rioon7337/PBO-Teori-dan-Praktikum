@@ -7,4 +7,6 @@ Nilai PBO Tertinggi  : 91.0 (Budi)
 Nilai PBO Terendah   : 70.0 (Rina)
 
 --- Statistik Nilai Basis Data ---
-Rata-rata Nilai BD   : 77,25
+Rata-rata Nilai SBD   : 77,25
+Nilai SBD Tertinggi  : 90.0 (Sari)
+Nilai SBD Terendah   : 66.0 (Rina)
