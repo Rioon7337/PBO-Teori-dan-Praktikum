@@ -15,8 +15,8 @@ import java.io.*;
 
 public class FileIOExample {
     public static void main(String[] args) {
-        String inputFile = "data.txt";
-        String outputFile = "output.txt";
+        String inputFile = "gambar.jpg";
+        String outputFile = "gambar1.jpg";
 
         // Tulis data ke file
         writeToFile(inputFile);
